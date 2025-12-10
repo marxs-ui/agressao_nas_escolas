@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Violência nas Escolas — CETI Paulo Ferraz</title>
+  <meta name="description" content="Informações, recursos e campanhas sobre violência nas escolas. Produzido pelos alunos do 2º ano - Técnico em Informática para Internet.">
+  <style>
+    :root{
+      --verde:#0b8a3e;
+      --amarelo:#ffd400;
+      --branco:#ffffff;
+      --muted:#444;
+      --card:#f9fff6;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0;background:linear-gradient(180deg,var(--branco),#f2f8f2);color:#111}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    header{background:var(--verde);color:var(--branco);padding:22px;border-radius:8px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .brand img{width:76px;height:76px;object-fit:cover;border-radius:10px;border:3px solid rgba(255,255,255,0.12)}
+    h1{margin:0;font-size:1.5rem}
+    p.lead{margin:6px 0 0;opacity:.95}
+
+    nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    nav a{background:var(--amarelo);color:#000;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:700}
+    nav a:hover{opacity:.9}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(3,60,30,0.06)}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .section-title h2{margin:0;color:var(--verde)}
+    .meta{color:var(--muted);font-size:.95rem}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+    .gallery img{width:100%;height:100px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid #e6f6ea}
+
+    video{width:100%;border-radius:8px;background:#000}
+
+    .cta{display:flex;gap:8px;flex-wrap:wrap}
+
+    /* BOTÕES */
+    .btn-primary{
+      background:var(--verde);
+      color:var(--branco);
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    /* ✔ CORRIGIDO: botão do Instagram sem amarelo */
+    .btn-secondary{
+      background:var(--verde);
+      color:#fff;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:.95rem}
+
+    /* Modal */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;padding:18px}
+    .modal.open{display:flex}
+    .modal .box{max-width:960px;width:100%;background:var(--branco);padding:12px;border-radius:8px}
+    .modal img{width:100%;height:auto;border-radius:6px}
+    .close-btn{background:var(--verde);color:var(--branco);border:none;padding:8px 12px;border-radius:6px;cursor:pointer;margin-top:8px}
+
+    form input, form textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #ccc}
+
+    .insta{display:flex;align-items:center;gap:8px}
+    .insta img{width:40px;height:40px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="images/logo_ceti.jpg" alt="Logo CETI Paulo Ferraz">
+        <div>
+          <h1>Violência nas Escolas — CETI Paulo Ferraz</h1>
+          <p class="lead">Material educativo e campanha digital. Projeto produzido pelos alunos do 2º ano - Técnico em Informática para Internet (tempo integral)</p>
+        </div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <article class="card" id="sobre">
+          <div class="section-title"><h2>Sobre a campanha</h2></div>
+          <p class="meta"><strong>Endereço:</strong> Rua 13 de Maio, 1189 — Bairro Vermelha, Timon, MA.</p>
+          <p>O CETI Paulo Ferraz é uma escola de tempo integral com foco em tecnologia e formação cidadã...</p>
+
+          <h3 style="color:var(--verde);margin-top:10px">O que é violência escolar?</h3>
+          <p>Violência escolar envolve agressões físicas, verbais, bullying...</p>
+
+          <h3 style="color:var(--verde);margin-top:10px">Como agir?</h3>
+          <ul>
+            <li>Fale com um adulto de confiança (professor, coordenador ou família).</li>
+            <li>Procure o apoio dentro ou fora da escola.</li>
+            <li>Documente situações e denuncie quando necessário.</li>
+          </ul>
+        </article>
+
+        <article class="card" id="recursos" style="margin-top:14px">
+          <div class="section-title"><h2>Recursos e apoiadores</h2></div>
+          <p class="meta">Links rápidos e contatos úteis.</p>
+
+          <ul>
+            <li><strong>Coordenação Escolar:</strong> Secretaria — (86) 9XXXX-XXXX</li>
+            <li><strong>Denúncia segura:</strong> canais municipais e conselhos tutelares</li>
+          </ul>
+
+          <p style="margin-top:8px">Material produzido pelos alunos: cartazes, vídeos e posts no Instagram.</p>
+
+          <!-- Instagram -->
+          <div style="margin-top:10px" class="insta">
+            <img src="images/insta_icon.png" alt="Instagram">
+            <div>
+              <strong>@ceti_pauloferraz</strong><br>
+              <a href="https://instagram.com/ceti_pauloferraz" target="_blank" class="btn-secondary">Acessar Instagram</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="galeria" style="margin-top:14px">
+          <div class="section-title"><h2>Galeria</h2></div>
+          <p class="meta">Clique nas imagens para ampliar.</p>
+
+          <div class="gallery" aria-live="polite">
+            <img src="images/violencia_01.jpg" data-full="images/violencia_01_large.jpg">
+            <img src="images/violencia_02.jpg" data-full="images/violencia_02_large.jpg">
+            <img src="images/violencia_03.jpg" data-full="images/violencia_03_large.jpg">
+            <img src="images/violencia_04.jpg" data-full="images/violencia_04_large.jpg">
+          </div>
+        </article>
+
+        <article class="card" id="videos" style="margin-top:14px">
+          <div class="section-title"><h2>Vídeos educativos</h2></div>
+          <video controls>
+            <source src="videos/peça_preventiva.mp4" type="video/mp4">
+          </video>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h2 style="color:var(--verde)">Informações rápidas</h2>
+          <p class="meta"><strong>Escola:</strong> CETI Paulo Ferraz</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="color:var(--verde)">Equipe</h3>
+          <p class="meta">Turma 2º ano — Técnico em Informática para Internet</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="color:var(--verde)">Contato & Denúncia</h3>
+          <a href="#contato" class="btn-primary">Fale Conosco</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" id="contato" style="margin-top:18px">
+      <div class="section-title"><h2>Fale conosco</h2></div>
+      <form onsubmit="event.preventDefault(); alert('Mensagem enviada.');">
+        <label>Nome</label>
+        <input required><br><br>
+
+        <label>E-mail</label>
+        <input type="email" required><br><br>
+
+        <label>Mensagem</label>
+        <textarea rows="4" required></textarea><br><br>
+
+        <button class="btn-primary">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="box">
+      <img id="modal-img">
+      <button class="close-btn" id="modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p>Produzido pelos alunos do 2º ano — Técnico em Informática para Internet.</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    document.querySelectorAll('.gallery img').forEach(img=>{
+      img.onclick = ()=>{modalImg.src = img.dataset.full; modal.classList.add('open');};
+    });
+    document.getElementById('modal-close').onclick = ()=> modal.classList.remove('open');
+  </script>
+
+</body>
+</html>
