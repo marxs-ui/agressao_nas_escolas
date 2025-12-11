@@ -40,8 +40,26 @@
     video{width:100%;border-radius:8px;background:#000}
 
     .cta{display:flex;gap:8px;flex-wrap:wrap}
-    .btn-primary{background:var(--verde);color:var(--branco);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
-    .btn-secondary{background:var(--amarelo);color:#000;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    /* BOTÕES */
+    .btn-primary{
+      background:var(--verde);
+      color:var(--branco);
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    /* ✔ CORRIGIDO: botão do Instagram sem amarelo */
+    .btn-secondary{
+      background:var(--verde);
+      color:#fff;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
 
     footer{margin-top:18px;text-align:center;color:var(--muted);font-size:.95rem}
 
@@ -62,7 +80,7 @@
   <header>
     <div class="container">
       <div class="brand">
-        <img src="images/logo_ceti.jpg" alt="Logo CETI Paulo Ferraz">
+        <img src="images_logo_ceti.jpg" alt="Logo CETI Paulo Ferraz">
         <div>
           <h1>Violência nas Escolas — CETI Paulo Ferraz</h1>
           <p class="lead">Material educativo e campanha digital. Projeto produzido pelos alunos do 2º ano - Técnico em Informática para Internet (tempo integral)</p>
@@ -84,77 +102,65 @@
         <article class="card" id="sobre">
           <div class="section-title"><h2>Sobre a campanha</h2></div>
           <p class="meta"><strong>Endereço:</strong> Rua 13 de Maio, 1189 — Bairro Vermelha, Timon, MA.</p>
-          <p>O CETI Paulo Ferraz é uma escola de tempo integral com foco em tecnologia e formação cidadã. Nesta página, divulgamos informações, orientações e materiais produzidos pelos alunos do 2º ano do Curso tecnico em Informatica para Internet para conscientizar a comunidade escolar sobre a violência nas escolas e promover ações de prevenção e acolhimento.</p>
+          <p>O CETI Paulo Ferraz é uma escola de tempo integral com foco em tecnologia e formação cidadã...</p>
 
           <h3 style="color:var(--verde);margin-top:10px">O que é violência escolar?</h3>
-          <p>Violência escolar envolve agressões físicas, verbais, bullying, cyberbullying e situações de exclusão. Reconhecer sinais e saber onde buscar ajuda são passos essenciais para um ambiente seguro.</p>
+          <p>Violência escolar envolve agressões físicas, verbais, bullying...</p>
 
           <h3 style="color:var(--verde);margin-top:10px">Como agir?</h3>
           <ul>
             <li>Fale com um adulto de confiança (professor, coordenador ou família).</li>
             <li>Procure o apoio dentro ou fora da escola.</li>
-            <li>Documente situações (prints, datas) e denuncie quando necessário.</li>
+            <li>Documente situações e denuncie quando necessário.</li>
           </ul>
         </article>
 
         <article class="card" id="recursos" style="margin-top:14px">
           <div class="section-title"><h2>Recursos e apoiadores</h2></div>
           <p class="meta">Links rápidos e contatos úteis.</p>
+
           <ul>
-            <li><strong>Coordenação Escolar:</strong> Secretaria do CETI — (86) 9XXXX-XXXX</li>
+            <li><strong>Coordenação Escolar:</strong> Secretaria — (86) 9XXXX-XXXX</li>
             <li><strong>Denúncia segura:</strong> canais municipais e conselhos tutelares</li>
           </ul>
-          <p style="margin-top:8px">Material produzido pelos alunos: cartazes, vídeos e posts informativos — acompanhe no Instagram da turma.</p>
 
-          <div style="margin-top:10px" class="insta">
-            <img src="images/insta_icon.png" alt="Instagram">
-            <div>
-              <strong>@ceti_pauloferraz</strong><br>
-              <a href="https://instagram.com/ceti_pauloferraz" target="_blank" class="btn-secondary">Acessar Inst
-          </div>
-        </article>
+          <p style="margin-top:8px">Material produzido pelos alunos: cartazes, vídeos e posts no Instagram.</p>
+
+          
 
         <article class="card" id="galeria" style="margin-top:14px">
           <div class="section-title"><h2>Galeria</h2></div>
           <p class="meta">Clique nas imagens para ampliar.</p>
+
           <div class="gallery" aria-live="polite">
-            <img src="images/violencia_01.jpg" alt="Roda de conversa sobre prevenção" tabindex="0" data-full="images/violencia_01_large.jpg">
-            <img src="images/violencia_02.jpg" alt="Cartazes da campanha" tabindex="0" data-full="images/violencia_02_large.jpg">
-            <img src="images/violencia_03.jpg" alt="Alunos apresentando peça teatral" tabindex="0" data-full="images/violencia_03_large.jpg">
-            <img src="images/violencia_04.jpg" alt="Oficina com família" tabindex="0" data-full="images/violencia_04_large.jpg">
+            <img src="images_violencia_01.jpg" data-full="images_violencia_01_large.jpg">
+            <img src="images_violencia_02.jpg" data-full="images_violencia_02_large.jpg">
+            <img src="images_violencia_03.jpg" data-full="images_violencia_03_large.jpg">
+            <img src="images_violencia_04.jpg" data-full="images_violencia_04_large.jpg">
           </div>
         </article>
 
         <article class="card" id="videos" style="margin-top:14px">
           <div class="section-title"><h2>Vídeos educativos</h2></div>
-          <p class="meta">Apresentações, entrevistas e peça teatral gravadas pelos alunos.</p>
-          <video controls playsinline preload="metadata">
-            <source src="videos/peça_preventiva.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
+          <video controls>
+            <source src="videos_peça_preventiva.mp4" type="video/mp4">
           </video>
-          <p style="margin-top:8px">Observação: para uso offline no Acode, coloque os arquivos em `videos/` e `images/` conforme o código.</p>
         </article>
-
       </section>
 
       <aside>
         <div class="card">
           <h2 style="color:var(--verde)">Informações rápidas</h2>
           <p class="meta"><strong>Escola:</strong> CETI Paulo Ferraz</p>
-          <p class="meta"><strong>Endereço:</strong> Rua 13 de Maio, 1189 — Bairro Vermelha, Teresina/PI</p>
-          <p class="meta"><strong>Modalidade:</strong> Tempo integral — Curso técnico na área de tecnologia</p>
         </div>
 
         <div class="card" style="margin-top:12px">
           <h3 style="color:var(--verde)">Equipe</h3>
-          <p class="meta">Alunos: Turma 2º ano — Técnico em Informática para Internet</p>
-          <p class="meta">Professor orientador: Prof. [Nome do Professor]</p>
+          <p class="meta">Turma 2º ano — Técnico em Informática para Internet</p>
         </div>
 
         <div class="card" style="margin-top:12px">
           <h3 style="color:var(--verde)">Contato & Denúncia</h3>
-          <p class="meta">Secretaria: secretaria@cetipauloferraz.edu.br</p>
-          <p class="meta">Telefone: (86) 9XXXX-XXXX</p>
           <a href="#contato" class="btn-primary">Fale Conosco</a>
         </div>
       </aside>
@@ -162,60 +168,41 @@
 
     <section class="card" id="contato" style="margin-top:18px">
       <div class="section-title"><h2>Fale conosco</h2></div>
-      <form onsubmit="event.preventDefault(); alert('Mensagem enviada. Obrigado por contribuir com a campanha.');" aria-label="Formulário de contato">
-        <label for="nome">Nome</label><br>
-        <input id="nome" required><br><br>
-        <label for="email">E-mail</label><br>
-        <input id="email" type="email" required><br><br>
-        <label for="mensagem">Mensagem</label><br>
-        <textarea id="mensagem" rows="4" required></textarea><br><br>
-        <button type="submit" class="btn-primary">Enviar</button>
+      <form onsubmit="event.preventDefault(); alert('Mensagem enviada.');">
+        <label>Nome</label>
+        <input required><br><br>
+
+        <label>E-mail</label>
+        <input type="email" required><br><br>
+
+        <label>Mensagem</label>
+        <textarea rows="4" required></textarea><br><br>
+
+        <button class="btn-primary">Enviar</button>
       </form>
     </section>
 
   </main>
 
-  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+  <div id="modal" class="modal">
     <div class="box">
-      <img id="modal-img" alt="">
-      <div style="text-align:right">
-        <button class="close-btn" id="modal-close">Fechar</button>
-      </div>
+      <img id="modal-img">
+      <button class="close-btn" id="modal-close">Fechar</button>
     </div>
   </div>
 
   <footer class="container">
-    <p>Produzido pelos alunos do 2º ano — Técnico em Informática para Internet. © CETI Paulo Ferraz — Teresina-PI</p>
+    <p>Produzido pelos alunos do 2º ano — Técnico em Informática para Internet.</p>
   </footer>
 
   <script>
-    // Modal gallery
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
-    const modalClose = document.getElementById('modal-close');
     document.querySelectorAll('.gallery img').forEach(img=>{
-      img.addEventListener('click', ()=> openModal(img));
-      img.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' ') openModal(img)});
+      img.onclick = ()=>{modalImg.src = img.dataset.full; modal.classList.add('open');};
     });
-    function openModal(img){
-      const full = img.dataset.full || img.src;
-      modalImg.src = full;
-      modalImg.alt = img.alt || '';
-      modal.classList.add('open');
-      modal.setAttribute('aria-hidden','false');
-    }
-    modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
-    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
-    function closeModal(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); modalImg.src=''; }
-
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
-      });
-    });
+    document.getElementById('modal-close').onclick = ()=> modal.classList.remove('open');
   </script>
+
 </body>
-</html>
+  </html>
